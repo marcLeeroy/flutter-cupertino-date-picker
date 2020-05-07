@@ -162,7 +162,7 @@ class DateTimeFormatter {
       return format.replaceAll('MMMM', months[value - 1]);
     } else if (format.contains('MMM')) {
       // MMM: the short name of month, e.g. Jan
-      months = DatePickerI18n.getLocaleMonths(locale, false);
+      months = DatePickerI18n.getLocaleMonths(locale);
       String month = months[value - 1];
       return format.replaceAll('MMM', month);
     }
